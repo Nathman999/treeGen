@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.1)
 project(SFMLTest)
 set(SFML_DIR C:/SFML/lib/cmake/SFML)
-include_directories(${SFML_DIR}../../../../include/src) 
+# include_directories(${SFML_DIR}../../../../include/src) 
 
 
 set(SFML_STATIC_LIBRARIES TRUE)
