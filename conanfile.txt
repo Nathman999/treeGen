@@ -4,7 +4,7 @@ sfml/2.5.1@bincrafters/stable
 [options]
 sfml:graphics=True
 sfml:window=True
-sfml:audio=True
+sfml:audio=False
 sfml:network=True
 
 [generators]
