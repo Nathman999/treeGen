@@ -44,8 +44,8 @@ public:
 	}
 	void parseTree(sf::VertexArray *vA) {
 		vA->append(sf::Vector2f(this->pos.x, this->pos.y));
-
 		vA->append(sf::Vector2f(pos.x + std::cos(angle)*length, pos.y + std::sin(angle)*length)); //
+		
 		for(int i = 0; i < child.size(); i++) {
 			this->child[i]->parseTree(vA);
 		}
@@ -61,8 +61,6 @@ int main() {
 	treeBranch tree(250, 0, 70, 1.57);
 	tree.generate(2);
 	tree.parseTree(&lines);
-	// std::cout << lines.getVertexCount() << "\n";
-
 
 	while (window.isOpen()) {
 		sf::Event event;
