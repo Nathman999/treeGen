@@ -1,6 +1,3 @@
-//To compile
-// g++ main.cpp -o main -LC:/SFML/lib -IC:/SFML/include -lsfml-system -lsfml-graphics -lsfml-window -lopenal32 -mwindows
-
 #include <iostream>
 #include <SFML/Graphics.hpp>
 #include <vector>
@@ -45,7 +42,7 @@ public:
 	void parseTree(sf::VertexArray *vA) {
 		vA->append(sf::Vector2f(this->pos.x, this->pos.y));
 		vA->append(sf::Vector2f(pos.x + std::cos(angle)*length, pos.y + std::sin(angle)*length)); //
-		
+
 		for(int i = 0; i < child.size(); i++) {
 			this->child[i]->parseTree(vA);
 		}
